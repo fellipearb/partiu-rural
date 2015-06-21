@@ -29,7 +29,7 @@ module.exports = function(grunt) {
             dist: {
                 files: [
                     'assets/_js/**/*',
-                    'assets/_sass/**/*'
+                    'assets/_less/**/*'
                 ],
 
                 tasks: ['uglify', 'less']
