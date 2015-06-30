@@ -1,0 +1,88 @@
+/*RESET CSS*/
+	* { 
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-decoration: none;
+	}
+	
+	body {
+		font-family: 'Roboto';
+	}
+
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+/*PLUGINS*/
+	
+
+/*VARIAVEIS*/
+	@c-green: #009688;
+	@c-green-b: #005c53;
+
+/*ALL*/
+@media screen {
+	header {
+		.menu {
+			height: 45px;
+			display: table;
+			background: @c-green;
+
+			h1 {
+				margin: 0;
+				padding-top: 15px;
+				font-size: 14px;
+			}
+
+			ul {
+				margin-bottom: 0;
+				li {
+					a {
+						color: #FFF;
+						display: block;
+						padding-top: 15px;
+						height: 45px;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+		.search {
+			p[class*="col"], div[class*="col"] {
+				padding: 0 2px;
+			}
+
+			input {
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+/*MOBILE MIN*/
+@media (min-width: 300px) {
+
+}
+
+/*MOBILE LARGE*/
+@media (min-width: 480px) {
+
+}
+
+/*TABLET*/
+@media (min-width: 760px) {
+
+}
+
+/*DESKTOP MIN*/
+@media (min-width: 992px) {
+
+}
+
+/*DESKTOP LG*/
+@media (min-width: 1200px) {
+
+}
