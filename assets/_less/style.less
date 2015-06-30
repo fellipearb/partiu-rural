@@ -59,8 +59,6 @@
 		.menu {
 			height: 40px;
 			display: table;
-			padding: 10px 0px;
-
 			h1 {
 				margin: 0;
 				padding-top: 15px;
@@ -69,21 +67,23 @@
 
 			ul {
 				margin-bottom: 0;
+				height: 65px;
 				li {
+					height: 100%;
 					a {
 						color: #FFF;
 						display: block;
-						padding-top: 15px;
+						padding: 24px 10px;
 						height: 45px;
 						font-weight: bold;
 						text-align: center;
+						height: 100%;
 					}
 				}
 			}
 		}
 		.search {
 			p{
-				font-size: 20px;
 				color: @color-azul;
 				font-weight: 300;
 				margin: 0px;
@@ -111,6 +111,44 @@
 				font-weight: 300;
 				.border-radius(2px);
 			}
+
+			.icon-inputs{
+				position: relative;
+					>i{
+						position: absolute;
+						top: 5px;
+						left: 10px;
+						color: #CFCFCF;
+					}
+			}
+
+			.icon-inputs.destino{
+				>i{
+					font-size: 26px;
+				}
+			}
+
+			.icon-inputs.calendario{
+				input{
+					padding: 5px 5px 5px 33px;
+				}
+
+				>i{
+					top: 6px;
+					font-size: 22px;
+				}
+			}
+
+			.icon-inputs.peoples{
+				input{
+					padding: 5px 5px 5px 35px;
+				}
+
+				>i{
+					top: 7px;
+					font-size: 22px
+				}
+			}
 		}
 	}
 
@@ -124,7 +162,7 @@
 
 /*MOBILE MIN*/
 @media (min-width: 300px) {
-
+	
 }
 
 /*MOBILE LARGE*/
@@ -139,10 +177,26 @@
 
 /*DESKTOP MIN*/
 @media (min-width: 992px) {
-
+	.search {
+		p{
+			font-size: 14px;
+			color: @color-azul;
+			font-weight: 300;
+			margin: 0px;
+			line-height: 37px;
+		}
+	}
 }
 
 /*DESKTOP LG*/
 @media (min-width: 1200px) {
-
+	.search {
+		p{
+			font-size: 16px;
+			color: @color-azul;
+			font-weight: 300;
+			margin: 0px;
+			line-height: 37px;
+		}
+	}
 }

@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <title>#PartiuRural</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,700,900,500italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" /> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
@@ -26,11 +27,30 @@
         <div class="top-busca">
             <div class="row search">
                 <div class="container">
-                    <p class="col-xs-12 col-sm-4 col-md-3 col-lg-3">Para onde gostaria de ir?</p>
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-5"><input  name="localizacao" placeholder="Onde ir ?" /></div>
-                    <div class="col-xs-4 col-sm-4 col-md-1 col-lg-1"><input name="data-de" placeholder="De" /></div>
-                    <div class="col-xs-4 col-sm-4 col-md-1 col-lg-1"><input name="data-ate" placeholder="Até" /></div>
-                    <div class="col-xs-4 col-sm-4 col-md-1 col-lg-1"><input name="qtd-pessoas" placeholder="Nº Pessoas" /></div>
+                    <p class="col-xs-12 col-sm-4 col-md-2 col-lg-2">Para onde gostaria de ir?</p>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="icon-inputs destino">
+                            <i class="fa fa-map-marker"></i>
+                            <input name="localizacao" />
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                        <div class="icon-inputs calendario">
+                            <i class="fa fa-calendar-o"></i>
+                            <input name="data-de" />
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                        <div class="icon-inputs calendario">
+                            <i class="fa fa-calendar-o"></i>
+                            <input name="data-ate" /></div>
+                        </div>
+                    <div class="col-xs-4 col-sm-4 col-md-1 col-lg-1">
+                        <div class="icon-inputs peoples">
+                            <i class="fa fa-users"></i>
+                            <input name="qtd-pessoas" />
+                        </div>
+                    </div>
                     <button class="col-xs-12 col-sm-4 col-md-1 col-lg-1 buscar">Buscar</button>
                 </div>
             </div>
