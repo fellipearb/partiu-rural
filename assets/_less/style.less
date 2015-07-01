@@ -45,7 +45,6 @@
 
 /*ALL*/
 @media screen {
-
 	header {
 		.top-menu{
 			background: @c-green;
@@ -67,14 +66,12 @@
 			}
 
 			ul {
-				margin-bottom: 0;
-				height: 65px;
+				margin-bottom: 0;				
 				li {
 					height: 100%;
 					a {
 						color: #FFF;
-						display: block;
-						padding: 24px 10px;
+						display: block;						
 						height: 45px;
 						font-weight: bold;
 						text-align: center;
@@ -153,7 +150,8 @@
 		}
 	}
 
-	.banner {
+	.banner, .banner-mobile {
+		padding: 0;
 		img { 
 			margin: 0 auto;
 			display: block;
@@ -163,7 +161,57 @@
 
 /*MOBILE MIN*/
 @media (min-width: 300px) {
-	
+	header {
+		.top-menu {
+			.container.menu {
+				a[href="#toggle-menu"] {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+					color: #FFF;
+					font-size: 28px;
+				}
+
+				ul {
+					position: absolute;
+					top: 60px;
+					left: -700px;	
+					background: #009688;
+					z-index: 99;
+					height: auto;
+					padding: 0 10px 0 0;
+					height: auto;
+					li {
+						border-bottom: 1px solid #FFF;
+						a {
+							padding: 15px 0;
+						}
+					}
+					li.last {
+						border: none;
+					}
+				}
+			}
+		}
+
+		.search {
+			input {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.overlay-menu {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 57px;
+		left: 0;
+		background: #000;
+		opacity: 0.8;
+		display: none;
+		z-index: 9;
+	}
 }
 
 /*MOBILE LARGE*/
@@ -173,7 +221,29 @@
 
 /*TABLET*/
 @media (min-width: 760px) {
-
+	.top-menu {
+		.container.menu {
+			h1 {
+				img {
+					margin: 0 auto;
+					display: block;
+				}
+			}
+			ul {
+				position: relative!important;
+				top: inherit!important;
+				left: inherit!important;
+				height: 65px!important;
+				li {
+					width: auto;
+					border-bottom: none!important;					
+					a {
+						padding: 24px 10px!important;
+					}
+				}
+			}
+		}
+	}
 }
 
 /*DESKTOP MIN*/
