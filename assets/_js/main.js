@@ -39,6 +39,7 @@ var HOME = {
 	init: function() {
 		/*INICIA FUNCOES DA HOME*/
 		HOME.banner();
+		HOME.carrousel();
 	},
 	banner: function() {
 		/*CARROUSEL HOME*/
@@ -48,6 +49,11 @@ var HOME = {
 
 	    $('.banner-mobile').owlCarousel({
 	        singleItem: true
+	    });
+	},
+	carrousel: function() {
+		$('.carrousel').owlCarousel({
+	        
 	    });
 	}
 }
