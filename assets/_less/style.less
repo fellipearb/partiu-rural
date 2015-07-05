@@ -362,6 +362,13 @@
 			}
 		}
 	}
+
+	.carrousel{
+		padding: 0px;
+		li{
+			width: 100%;
+		}
+	}
 }
 
 /*MOBILE LARGE*/
@@ -371,6 +378,30 @@
 			> div {
 				img {
 					margin: 0 auto;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.carrousel{
+		li{
+			width: 100%;
+			figure{
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 640px) {
+	.carrousel{
+		li{
+			width: 190px;
+			figure{
+				img{
 					width: 100%;
 				}
 			}
@@ -426,6 +457,17 @@
 			
 			> div.banner-5, > div.banner-6 {
 				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.carrousel{
+		li{
+			width: 230px;
+			figure{
+				img{
 					width: 100%;
 				}
 			}
@@ -553,6 +595,18 @@
 			}
 		}
 	}
+
+	.carrousel{
+		li{
+			width: 210px;
+			figure{
+				img{
+
+				}
+			}
+		}
+	}
+
 	.conheca-mais{
 		.container{
 			.carrousel{
@@ -562,6 +616,7 @@
 					.owl-wrapper{
 						.owl-item{
 							li{
+								width: 210px;
 								figure{
 									img{
 										border-top: 4px solid @borda-verde;

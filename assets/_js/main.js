@@ -42,6 +42,9 @@ var DEFAULT = {
 			var prev = $('.owl-carousel .owl-controls .owl-prev');
 			var next = $('.owl-carousel .owl-controls .owl-next');
 
+			prev.addClass('visible-lg');
+			next.addClass('visible-lg');
+
 			prev.html('<i class="fa fa-chevron-left"></i>');
 			next.html('<i class="fa fa-chevron-right"></i>');
 		},200);
@@ -66,11 +69,12 @@ var HOME = {
 	},
 	carrousel: function() {
 		$('.mais-buscados .carrousel').owlCarousel({
-	        
+	    	itemsTablet: [768, 3]
 	    });
 
 	    $('.chamadas-categoria-carousel').owlCarousel({
 	    	items : 4,
+	    	itemsTablet: [768, 3],
 	    	navigation: true,
 	    	scrollPerPage: true
 	    });
