@@ -31,6 +31,7 @@
 	/*Bordas*/
 	@borda-cinza: #BBBBBB;
 	@borda-laranja: #ffbd0c;
+	@borda-verde: #33c276;
 
 	.border-radius (@radius: 5px) {
 		-webkit-border-radius: @radius;
@@ -191,7 +192,7 @@
 	.carrousel {
 		padding: 0 20px;
 		li {
-			width: 186px;
+			width: 210px;
 			margin: 0 auto;
 			figure {
 				img {
@@ -230,19 +231,58 @@
 				}
 				> b {
 					float: right;
+					i{
+						color: #f20;
+					}
 				}
 			}
 
 			.info-count {
 				padding: 0 8px;
+				display: table;
+				margin: 0 auto;
 				.itens {
 					float: left;
 					padding: 5px 10px;
-					background: #d3d3d3;
+					background: #EEEEEE;
 					margin: 0 5px;
+					.border-radius(2px);
+					i{
+						color: #a9a9a9;
+					}
 					span {
 						font-size: 12px;
+						font-weight: bold;
 					}
+				}
+			}
+		}
+
+		.owl-pagination{
+			margin-top: 25px;
+		}
+
+		.owl-controls{
+			.owl-buttons{
+				position: relative;
+				.owl-next{
+					color: #869791;
+					background: none;
+					border: 0px;
+					font-size: 26px;
+					position: absolute;
+					top: -42px;
+					right: 340px;
+				}
+
+				.owl-prev{
+					color: #869791;
+					background: none;
+					border: 0px;
+					font-size: 26px;
+					position: absolute;
+					top: -42px;
+					left: 340px;
 				}
 			}
 		}
@@ -454,7 +494,6 @@
 	}
 }
 
-
 /*DESKTOP LG*/
 @media (min-width: 1200px) {
 	header{
@@ -511,6 +550,85 @@
 			> div.banner-6 {
 				width: 295px;
 				padding: 0;
+			}
+		}
+	}
+
+	.conheca-mais{
+		.container{
+			.carrousel{
+				width: 910px;
+				float: left;
+				.owl-wrapper-outer{
+					.owl-wrapper{
+						.owl-item{
+							li{
+								figure{
+									img{
+										border-top: 4px solid @borda-verde;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.col-lg-2{
+				width: 20%;
+				padding: 0px;
+			}
+
+			.chamada-categoria{
+				.border-radius(4px);
+				text-decoration: none;
+				
+			}
+
+			.pousadas{
+				background: #33c276;
+				color: #FFF;
+				text-align: center;
+				height: 234px;
+				position: relative;
+				-webkit-transform: translateZ(0);
+				transform: translateZ(0);
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+				-moz-osx-font-smoothing: grayscale;
+				overflow: hidden;
+				-webkit-transition-duration: 0.3s;
+				transition-duration: 0.3s;
+				-webkit-transition-property: color, background-color;
+				transition-property: color, background-color;
+				h3{
+					margin: 0px;
+					font-size: 36px;
+					font-weight: 900;
+					text-transform: uppercase;
+				}
+				h4{
+					margin: 75px 0px 0px 0px;
+					font-size: 30px;
+					font-weight: 300;
+					font-style: italic;
+				}
+				span.ver-mais{
+					display: block;
+					font-size: 20px;
+					font-weight: 100;
+					position: absolute;
+					bottom: 5px;
+					left: 50%;
+					margin-left: -45px;
+				}
+			}
+
+			.pousadas:hover{
+				background: #FFF;
+				color: @borda-verde;
+				border: 1px solid @borda-verde;
 			}
 		}
 	}
