@@ -56,14 +56,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		            <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
 		        </div>
 		        <!--logo start-->
-		        <a href="index.html" class="logo"><b>DASHGUM FREE</b></a>
+		        <a href="<?=$this->Html->url('/');?>" class="logo"><b>DASHGUM FREE</b></a>
 		        <!--logo end-->
 		        <div class="nav notify-row" id="top_menu">
 		            <!--  notification start -->
 		            <ul class="nav top-menu">
 		                <!-- settings start -->
 		                <li class="dropdown">
-		                    <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+		                    <a data-toggle="dropdown" class="dropdown-toggle" href="<?=$this->Html->url('/');?>">
 		                    <i class="fa fa-tasks"></i>
 		                    <span class="badge bg-theme">4</span>
 		                    </a>
@@ -73,7 +73,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		                            <p class="green">You have 4 pending tasks</p>
 		                        </li>
 		                        <li>
-		                            <a href="index.html#">
+		                            <a href="<?=$this->Html->url('/');?>">
 		                                <div class="task-info">
 		                                    <div class="desc">DashGum Admin Panel</div>
 		                                    <div class="percent">40%</div>
@@ -86,7 +86,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		                            </a>
 		                        </li>
 		                        <li>
-		                            <a href="index.html#">
+		                            <a href="<?=$this->Html->url('/');?>">
 		                                <div class="task-info">
 		                                    <div class="desc">Database Update</div>
 		                                    <div class="percent">60%</div>
@@ -99,7 +99,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		                            </a>
 		                        </li>
 		                        <li>
-		                            <a href="index.html#">
+		                            <a href="<?=$this->Html->url('/');?>">
 		                                <div class="task-info">
 		                                    <div class="desc">Product Development</div>
 		                                    <div class="percent">80%</div>
@@ -112,7 +112,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		                            </a>
 		                        </li>
 		                        <li>
-		                            <a href="index.html#">
+		                            <a href="<?=$this->Html->url('/');?>">
 		                                <div class="task-info">
 		                                    <div class="desc">Payments Sent</div>
 		                                    <div class="percent">70%</div>
@@ -132,7 +132,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		                <!-- settings end -->
 		                <!-- inbox dropdown start-->
 		                <li id="header_inbox_bar" class="dropdown">
-		                    <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+		                    <a data-toggle="dropdown" class="dropdown-toggle" href="<?=$this->Html->url('/');?>">
 		                    <i class="fa fa-envelope-o"></i>
 		                    <span class="badge bg-theme">5</span>
 		                    </a>
@@ -142,7 +142,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		                            <p class="green">You have 5 new messages</p>
 		                        </li>
 		                        <li>
-		                            <a href="index.html#">
+		                            <a href="<?=$this->Html->url('/');?>">
 		                            <span class="photo"><img alt="avatar" src="assets/img/ui-zac.jpg"></span>
 		                            <span class="subject">
 		                            <span class="from">Zac Snider</span>
@@ -154,7 +154,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		                            </a>
 		                        </li>
 		                        <li>
-		                            <a href="index.html#">
+		                            <a href="<?=$this->Html->url('/');?>">
 		                            <span class="photo"><img alt="avatar" src="assets/img/ui-divya.jpg"></span>
 		                            <span class="subject">
 		                            <span class="from">Divya Manian</span>
@@ -166,7 +166,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		                            </a>
 		                        </li>
 		                        <li>
-		                            <a href="index.html#">
+		                            <a href="<?=$this->Html->url('/');?>">
 		                            <span class="photo"><img alt="avatar" src="assets/img/ui-danro.jpg"></span>
 		                            <span class="subject">
 		                            <span class="from">Dan Rogers</span>
@@ -178,7 +178,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		                            </a>
 		                        </li>
 		                        <li>
-		                            <a href="index.html#">
+		                            <a href="<?=$this->Html->url('/');?>">
 		                            <span class="photo"><img alt="avatar" src="assets/img/ui-sherman.jpg"></span>
 		                            <span class="subject">
 		                            <span class="from">Dj Sherman</span>
@@ -190,7 +190,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		                            </a>
 		                        </li>
 		                        <li>
-		                            <a href="index.html#">See all messages</a>
+		                            <a href="<?=$this->Html->url('/');?>">See all messages</a>
 		                        </li>
 		                    </ul>
 		                </li>
@@ -200,20 +200,20 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		        </div>
 		        <div class="top-menu">
 		            <ul class="nav pull-right top-menu">
-		                <li><a class="logout" href="login.html">Logout</a></li>
+		                <li><a class="logout" href="<?=$this->Html->url('/');?>logout">Logout</a></li>
 		            </ul>
 		        </div>
 		    </header>
 		    <!--header end-->
 		    <!--sidebar start-->
 		    <aside>
-		        <div id="sidebar"  class="nav-collapse ">
+		        <div id="sidebar" class="nav-collapse ">
 		            <!-- sidebar menu start-->
 		            <ul class="sidebar-menu" id="nav-accordion">
 		                <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
 		                <h5 class="centered">Marcel Newman</h5>
 		                <li class="mt">
-		                    <a class="active" href="index.html">
+		                    <a class="active" href="<?=$this->Html->url('/');?>">
 		                    <i class="fa fa-dashboard"></i>
 		                    <span>Dashboard</span>
 		                    </a>
@@ -285,6 +285,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		        </div>
 		    </aside>
 		    <!--sidebar end-->
+		    <!-- main content start -->
+		    <?php echo $this->Session->flash(); ?>
+			<?php echo $this->fetch('content'); ?>
+		    <!-- main content end -->
 		    <!--footer start-->
 		    <footer class="site-footer">
 		        <div class="text-center">
@@ -295,8 +299,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		        </div>
 		    </footer>
 		    <!--footer end-->
-			<?php echo $this->Session->flash(); ?>
-			<?php echo $this->fetch('content'); ?>
 		</section>
 		<!-- js placed at the end of the document so the pages load faster -->
 		<script src="<?=$this->Html->url('/');?>assets/js/jquery.js"></script>
