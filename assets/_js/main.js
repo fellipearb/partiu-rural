@@ -60,23 +60,27 @@ var HOME = {
 	banner: function() {
 		/*CARROUSEL HOME*/
 		$('.banner').owlCarousel({
-	        singleItem: true
+	        singleItem: true,
+	        autoPlay: true
 	    });
 
 	    $('.banner-mobile').owlCarousel({
-	        singleItem: true
+	        singleItem: true,
+	        autoPlay: true
 	    });
 	},
 	carrousel: function() {
 		$('.mais-buscados .carrousel').owlCarousel({
-	    	itemsTablet: [768, 3]
+	    	itemsTablet: [768, 3],
+	    	autoPlay: true
 	    });
 
 	    $('.chamadas-categoria-carousel').owlCarousel({
 	    	items : 4,
 	    	itemsTablet: [768, 3],
 	    	navigation: true,
-	    	scrollPerPage: true
+	    	scrollPerPage: true,
+	    	autoPlay: true
 	    });
 	}
 }
