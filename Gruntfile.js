@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                 },
                 src: './',
                 dest: 'partiu',
-                exclusions: ['./.*', './**/bin', './docs', './backoffice', './assets/_js', './assets/_less', './node_modules*', './**/.DS_Store', './**/Thumbs.db', './**/tmp']
+                exclusions: ['./.*', './**/bin', './docs', './assets/_js', './assets/_less', './node_modules*', './**/.DS_Store', './**/Thumbs.db', './**/tmp']
             }
         }, // ftp
 
