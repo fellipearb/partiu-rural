@@ -3,10 +3,6 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
         uglify: {
-            options: {
-                mangle: false
-            },
-
             my_target: {
                 files: {
                     'assets/js/main.js': ['assets/_js/main.js']
@@ -25,14 +21,36 @@ module.exports = function(grunt) {
             }
         }, // less
 
-        watch: {
-            dist: {
-                files: [
-                    'assets/_js/**/*',
-                    'assets/_less/**/*'
-                ],
+        'ftp-deploy': {
+            build: {
+                auth: {
+                    host: 'ftp.dwinfotec.com.br',
+                    port: 21,
+                    authKey: 'key1'
+                },
+                src: './',
+                dest: 'partiu',
+                exclusions: ['./.*', './**/bin', './docs', './backoffice', './assets/_js', './assets/_less', './node_modules*', './**/.DS_Store', './**/Thumbs.db', './**/tmp']
+            }
+        }, // ftp
 
-                tasks: ['uglify', 'less']
+        watch: {
+            css: {
+                files: 'assets/_less/**/*',
+                tasks: ['less', 'ftp-deploy'],
+            },
+            scripts : {
+                files : 'assets/_js/**/*',                
+                tasks : ['uglify', 'ftp-deploy'],
+                options: {
+                    livereload: true,
+                },
+            },
+            configFiles: {
+                files: 'Gruntfile.js',
+                options: {
+                    reload: true
+                }
             }
         } // watch
 
@@ -42,6 +60,7 @@ module.exports = function(grunt) {
     // Plugins do Grunt
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-ftp-deploy');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
 
@@ -50,5 +69,5 @@ module.exports = function(grunt) {
 
     // Tarefa para Watch
     grunt.registerTask('w', ['watch']);
-
+    grunt.registerTask('f', ['ftp-deploy']);
 };
