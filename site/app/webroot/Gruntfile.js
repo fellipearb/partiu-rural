@@ -24,13 +24,13 @@ module.exports = function(grunt) {
         'ftp-deploy': {
             build: {
                 auth: {
-                    host: 'ftp.dwinfotec.com.br',
+                    host: 'ftp.partiurural.com.br',
                     port: 21,
                     authKey: 'key1'
                 },
-                src: './',
-                dest: 'partiu',
-                exclusions: ['./.*', './**/bin', './docs', './assets/_js', './assets/_less', './node_modules*', './**/.DS_Store', './**/Thumbs.db', './**/tmp']
+                src: '../../../',
+                dest: '/public_html/projeto',
+                exclusions: ['.git*', './.*', './**/bin', './docs', './assets/_js', './assets/_less', './node_modules*', './**/.DS_Store', './**/Thumbs.db', './**/tmp']
             }
         }, // ftp
 
