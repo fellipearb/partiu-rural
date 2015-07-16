@@ -37,11 +37,11 @@ module.exports = function(grunt) {
         watch: {
             css: {
                 files: 'assets/_less/**/*',
-                tasks: ['less', 'ftp-deploy'],
+                tasks: ['less'/*, 'ftp-deploy'*/],
             },
             scripts : {
                 files : 'assets/_js/**/*',                
-                tasks : ['uglify', 'ftp-deploy'],
+                tasks : ['uglify'/*, 'ftp-deploy'*/],
                 options: {
                     livereload: true,
                 },

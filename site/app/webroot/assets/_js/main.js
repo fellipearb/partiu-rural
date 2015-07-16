@@ -84,3 +84,12 @@ var HOME = {
 	    });
 	}
 }
+
+var ANUNCIE = {
+	init : function() {
+		ANUNCIE.cadastre();
+	},
+	cadastre : function() {
+		
+	}
+}
